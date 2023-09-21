@@ -1,4 +1,4 @@
-use KainoosProjectTeam4_JohnMc;
+USE KainoosProjectTeam4_JohnMc;
 
 CREATE TABLE Employee(
 	employeeId INT AUTO_INCREMENT PRIMARY KEY,
