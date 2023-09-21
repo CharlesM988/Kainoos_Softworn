@@ -12,7 +12,13 @@ CREATE TABLE Sales_Employees(
 	commission_Rate Decimal(5,2),
     CONSTRAINT chkCommissionRate CHECK (commission_Rate >= 0 AND commission_Rate <= 100),
 	CONSTRAINT fk_employeeSales FOREIGN KEY (employeeId) REFERENCES Employee(employeeId)
+
 );
+
+
+
+
+
 
 INSERT INTO Employee (BusinessSector, FirstName, Surname) -- inputting data into the Employee table
 	VALUES
@@ -55,3 +61,4 @@ INSERT Sales_Employees( employeeId, commission_Rate)
 	(17, 3),
 	(18, 4);
 	
+>>>>>>> c9675bc9fce7b8a5ea57c49930dc3d5930630b28
