@@ -1,0 +1,6 @@
+CREATE TABLE Employee_Projects(
+	projectId int,
+	employeeId int,	
+	CONSTRAINT fk_EmployeeProjectsTOEmployee FOREIGN KEY (employeeId) REFERENCES Employee(employeeId),
+	CONSTRAINT fk_EmployeeProjectsTOProject FOREIGN KEY (projectId) REFERENCES Project(projectId)
+);
