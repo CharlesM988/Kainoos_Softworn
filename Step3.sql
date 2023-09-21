@@ -1,6 +1,6 @@
 USE KainoosProjectTeam4_JohnMc;
 
-#Create the Client table
+#Create the Client table.
 CREATE TABLE Client(
 	ClientId int AUTO_INCREMENT PRIMARY KEY,
     employeeId int,
@@ -12,7 +12,7 @@ CREATE TABLE Client(
 );
 
 
-#Insert clients into the Client table
+#Insert clients into the Client table.
 INSERT INTO `Client` (EmployeeId, name, address, phoneNumber)
 VALUES
 ( 1, 'Josh Kelso', '1 Kainos Road', '07295723402'),
@@ -22,5 +22,5 @@ VALUES
 (4, 'James David', '56 Main Street', '07111986524');
 
 
-#Verify that the table has populated with the clients
+#Verify that the table has populated with the clients.
 SELECT * FROM `Client`;
