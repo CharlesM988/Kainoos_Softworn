@@ -13,3 +13,4 @@ JOIN
     Project AS P ON P.clientId = C.clientId
 GROUP BY 
     E.employeeId, E.firstName, E.surname; 
+    
