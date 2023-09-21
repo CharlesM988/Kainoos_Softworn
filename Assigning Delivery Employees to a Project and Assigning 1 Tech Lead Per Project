@@ -1,0 +1,8 @@
+CREATE TABLE Employee_Projects(
+	projectId int,
+	employeeId int,	
+	isTechLead bool,
+	CONSTRAINT fk_EmployeeProjectsTOEmployee FOREIGN KEY (employeeId) REFERENCES Employee(employeeId),
+	CONSTRAINT fk_EmployeeProjectsTOProject FOREIGN KEY (projectId) REFERENCES Project(projectId)
+	ADD CONSTRAINT unique_tech_lead_per_project UNIQUE (projectId, isTechLead);
+);
