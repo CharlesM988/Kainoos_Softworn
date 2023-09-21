@@ -14,7 +14,7 @@ CREATE TABLE Sales_Employees(
 	CONSTRAINT fk_employeeSales FOREIGN KEY (employeeId) REFERENCES Employee(employeeId)
 );
 
-INSERT INTO Employee (BusinessSector, JobTitle, FirstName, Surname) -- inputting data into the Employee table
+INSERT INTO Employee (BusinessSector, FirstName, Surname) -- inputting data into the Employee table
 	VALUES
 	('Delivery', 'John', 'Smith'),
 	('Sales', 'Alice', 'Johnson'),
